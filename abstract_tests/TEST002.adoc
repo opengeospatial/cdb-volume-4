@@ -1,0 +1,9 @@
+[cols=">20h,<80d",width="100%"]
+|====================
+|Test identifier | /conf/shapefile/polygon-rules-reader
+|Test purpose: | Verify that a Shapefile reader handles polygon data correctly and that any errors in the polygon data as per requirement 2 are properly handled and reported.
+|Test method: | Visual inspection. Pass if verified.
+|Requirement: | /req/shapefile/polygon-rules-reader
+|Dependency: |Shapefile specification
+|Test type: |Conformance
+|====================

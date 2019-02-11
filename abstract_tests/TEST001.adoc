@@ -1,0 +1,9 @@
+[cols=">20h,<80d",width="100%"]
+|====================
+|Test identifier | /conf/shapefile/vector-shape-rule
+|Test purpose: | Verify that all instances of the feature are of the same Shape type.
+|Test method: | Visual inspection. Pass if verified.
+|Requirement: | /req/shapefile/vector-shp-rule
+|Dependency: |Shapefile specification
+|Test type: |Conformance
+|====================

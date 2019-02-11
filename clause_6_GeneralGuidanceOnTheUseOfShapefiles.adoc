@@ -1,0 +1,82 @@
+== General Guidance on the use of Shapefiles
+
+A Shapefile is a specification for encoding and storing vector data storage format for storing the location, shape, and attributes of geographic features. A Shapefile is stored as a set of related files and contains one feature class. The Shapefile specification was developed by Esri.
+
+In a CDB Shapefile, the position of all points is expressed using WGS-84 geographic coordinates (latitude, longitude, altitude), as explained in Volume 8: CDB Spatial Reference Systems Guidance.
+
+As per Esri Shapefile Technical Description, the set of attributes of Vector features are stored in dBase III+ files. Refer to Annex E in Volume 2footnote:[Volume 2: OGC CDB Core Model and Physical Structure Annexes (Best Practice)] of the CDB standard: CDB Annexes for the dBase III file format description and recommended encodings. The CDB standard provides three attribution schemas to represent attribution data:
+
+* Instance-level attribution schema
+* Class-level attribution schema
+* Extended-level attribution schema
+
+include::requirements/requirements_class.adoc[]
+
+
+
+To completely represent the vector data and attributes in a given tile as a Shapefile, the CDB standard requires that a Vector dataset consists of some or all of the following files:
+
+* **.shp* – feature shape files that provides the geometric aspects of each instance of a vector feature (point, lineal, and polygon features).
+
+include::requirements/REQ001.adoc[]
+
+* **.shx* – feature index files that stores the file offsets and content lengths for each of the records of the feature files. The only purpose of these files is to provide a simple means for clients to step through the individual records of the feature files (i.e., it contains no CDB modeled data).
+* **.dbf* – feature instance-level files that provide the instance-level attribution data for each of the records of the feature.
+* **.dbf* – feature class-level files that provide the class-level attribution data for each class of features present in the feature shape files.
+* **.dbf* – feature extended-level files that provide optional extended-level attribution data for entries in either the feature instance- or class-level files.
+* **.shp* – figure point shape files allow modelers the ability to assign specific attribution for each point in lineal or polygon features. Without this additional Shapefile, the Shapefile format only allows specifying a single attribution for the entire lineal or polygon feature. The CDB standard extends the concept to allow specific attribution to each point of these features while enforcing position correlation. For instance, in case of a PowerLine feature, it is possible to associate, within the same dataset, a different geometric representation of a PowerLine pylon for each point of the lineal and still maintain the relationship between the point and the lineal.
+* **.shx* – figure point index files that stores the file offsets and content lengths for each of the records of the figure point shape files.
+* **.dbf* – figure point instance-level files that provide the instance-level attribution data for each of the records of the figure point shape files.
+* **.dbf* – figure point class-level files that provide the class-level attribution data for each class of features present in the figure point shape files
+* **.dbf* – figure point extended-level files that provide optional extended-level attribution data for entries in either the figure point instance- or class-level files.
+* **.dbf* – 2D relationship files. These files establish the relationship of point, lineal, and polygon features of a single or different datasets in a tile and between tiles.
+
+
+In addition to *.shp, *.dbf and *.shx files, the Shapefile specification also refers to a memo file with a *.dbt file that is used to store comment fields associated with the attribution *.dbf file.
+
+All of the information that is needed to instance features is organized in accordance to the CDB tile structure. All the tiled Shapefile dataset files are located in the same directory. The dataset’s second component selector (CS2) is used to differentiate between files with the same extension or with the same Vector features. Table 6-1: Component Selector 2 for Vector Dataset, presents the list of codes that are allocated. Note that Vector datasets do not necessarily use all of the Dataset Component Selector 2 reserved codes. Users of the CDB standard should refer to the appropriate section for an enumeration of the supported File Component Selector 2 codes as well as the ones specific to the Dataset.
+
+The Vector dataset concept and the feature code concepts overlap somewhat; some of the Vector datasets are generalizations or specializations of feature codes. Section 1.5 of the OGC CDB Core Standard: Model and Physical Data Store Structure (Volume 1) provides a recommended mapping of the feature attributes across the CDB compliant datasets. Note that the same feature _should_ not have two representations.
+
+*Table 6-1: Component Selector 2 for Vector Datasets*
+
+[cols=",,,",]
+|================================================================================================
+|*CS2* {set:cellbgcolor:lightgrey}|*File Extension* |*Dataset Component Name* |*Supported Shape Type*
+|001 {set:cellbgcolor:white}|*.shp +
+*.shx +
+*.dbf |Point features |Point, PointZ, PointM, MultiPoint, MultiPointZ, MultiPointM
+|002 |*.dbf |Point feature class-level attributes |N/A
+|003 |*.shp +
+*.shx +
+*.dbf |Lineal features |PolyLine, PolyLineZ, PolyLineM
+|004 |*.dbf |Lineal feature class-level attributes |N/A
+|005 |*.shp +
+*.shx +
+*.dbf |Polygon features |Polygon, PolygonZ, PolygonM, Multipatch
+|006 |*.dbf |Polygon feature class-level attributes |N/A
+|007 |*.shp +
+*.shx +
+*.dbf |Lineal figure point features |Point, PointZ, PointM, MultiPoint, MultiPointZ, MultiPointM
+|008 |*.dbf |Lineal figure point feature class-level attributes |N/A
+|009 |*.shp +
+*.shx +
+*.dbf |Polygon figure point features |Point, PointZ, PointM, MultiPoint, MultiPointZ, MultiPointM
+|010 |*.dbf |Polygon figure point feature class-level attributes |N/A
+|011 |*.dbf |2D relationship tile connections |N/A
+|012 | |Deprecated |N/A
+|013 | |Deprecated |N/A
+|014 | |Deprecated |N/A
+|015 |*.dbf |2D relationship dataset connections |N/A
+|016 |*.dbf |Point feature extended-level attributes |N/A
+|017 |*.dbf |Lineal feature extended-level attributes |N/A
+|018 |*.dbf |Polygon feature extended-level attributes |N/A
+|019 |*.dbf |Lineal Figure Point extended-level attributes |N/A
+|020 |*.dbf |Polygon Figure Point extended-level attributes |N/A
+|================================================================================================
+
+*_Notes about Shapefile Polygon Shapes_*
+
+Even though the Shapefile standard is very versatile, it also enforces some guidelines with respect to the Polygon Shapes. Those guidelines are referred to in Volume 4: OGC CDB Use of Shapefiles for Vector Data Storage (Best Practice).
+
+include::requirements/REQ002.adoc[]

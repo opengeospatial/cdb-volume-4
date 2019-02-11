@@ -1,0 +1,16 @@
+[width="90%",cols="2,6"]
+|===
+|*Requirement 2* Shapefile polygon readers {set:cellbgcolor:#CACCCE}
+|http://www.opengis.net/spec/cdb/1.1/shapefile/polygon-rules-reader +
+ +
+
+ Although the above are guidelines, Shapefile readers _SHALL_ handle the following cases with proper error handling and reporting for Polygon shapes:
+
+ * Has no self-intersections or co-linear segments
+
+ * Has no identical consecutive points (no zero-length segments)
+
+ * Does not degenerate into zero-area parts
+
+ * Does not have clock-wise inner rings (“Dirty Polygon”) {set:cellbgcolor:#FFFFFF}
+|===

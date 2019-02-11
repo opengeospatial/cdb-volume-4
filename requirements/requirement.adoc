@@ -1,0 +1,7 @@
+[width="90%",cols="2,6"]
+|===
+|*Requirement 1* Vector Shapefile Shape Type {set:cellbgcolor:#CACCCE}|http://www.opengis.net/spec/cdb/1.1/shapefile/vector-shp-rule +
+ +
+
+All instances of the feature _SHALL_ be of the same Shape type. While the Shapefile format supports up to 13 different types (each one stored in a different shape file), the CDB standard requires a maximum of one Shapefile type for point features, a maximum of one Shapefile type for lineal features and a maximum of one Shapefile type for polygon features for each tile (for a maximum of 3 feature Shapefiles per tile). {set:cellbgcolor:#FFFFFF}
+|===

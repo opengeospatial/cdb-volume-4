@@ -1,0 +1,19 @@
+== Conventions
+
+This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+
+=== Identifiers
+
+The normative provisions in this standard are denoted by the URI
+
+http://www.opengis.net/spec/cdb/1.1/shapefile
+
+All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
+
+For the sake of brevity, the use of “req” in a requirement URI denotes:
+
+http://www.opengis.net/spec/core[http://www.opengis.net/spec]/cdb/1.1/shapefile
+
+An example might be:
+
+req/shapefile/storage

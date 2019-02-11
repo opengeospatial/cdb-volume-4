@@ -1,0 +1,27 @@
+[appendix]
+:appendix-caption: Annex
+== Conformance Class Abstract Test Suite (Normative)
+
+=== Conformance Test Class: OGC CDB Shapefiles for vector data storage
+
+This section describes conformance test for the OGC CDB Standard Core. These abstract test cases describe the conformance criteria for verifying the structure and content of any data store claiming conformance to the CDB standard.
+
+The conformance class id is “http://www.opengis.net/spec/http://opengis.net/spec/CDB/1.0/core/lod-hierarchy[cdb-shapefile/1.0]/conf/” and all of the other conformance tests URLs are created in this path. Another issue that the reader should pay attention to is the test method. When the test method is assigned with “Visual”, it means that the purpose of the test should be “visually” investigate the file contents, image, or other content.
+
+
+==== General Shapefile Implementation Feature Rule
+
+The following conformance test is designed is to determine if a CDB vector Shapefile adheres to the feature type instance rule.
+
+include::abstract_tests/TEST001.adoc[]
+
+==== Shapefile Point Vertices
+
+Ensure that Shapefile readers handle the following cases with proper error handling and reporting for Polygon shapes:
+
+* Has no self-intersections or co-linear segments
+* Has no identical consecutive points (no zero-length segments)
+* Does not degenerate into zero-area parts
+* Does not have clock-wise inner rings (“Dirty Polygon”)
+
+include::abstract_tests/TEST002.adoc[]
