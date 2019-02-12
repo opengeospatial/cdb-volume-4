@@ -1,7 +1,7 @@
 [cols="1,4",width="90%"]
 |===
 2+|*Requirements Class* Shapefiles (1-2){set:cellbgcolor:#CACCCE}
-2+|http://www.opengis.net/spec/waterml/part2/json/req/req-core/req/shapefile/general{set:cellbgcolor:#FFFFFF}
+2+|/req/shapefile/general{set:cellbgcolor:#FFFFFF}
 |Target type |Operations
 |Dependency |Shapefile specification
 |*Requirement 1* {set:cellbgcolor:#CACCCE} |/req/shapefile/vector-shp-rule +
