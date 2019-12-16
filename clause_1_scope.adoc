@@ -2,4 +2,4 @@
 
 This CDB Best Practice volume defines the requirements and provides guidance on how to use Esri ShapeFiles in a CDB data store.
 
-include::https://github.com/opengeospatial/cdb-volume-1/blob/master/list_of_volumes.adoc
+include::https://github.com/opengeospatial/cdb-volume-1/blob/master/list_of_volumes.adoc[]
