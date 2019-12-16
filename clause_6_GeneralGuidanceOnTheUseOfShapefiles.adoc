@@ -53,7 +53,7 @@ The Vector dataset concept and the feature code concepts overlap somewhat; some 
 |004 |*.dbf |Lineal feature class-level attributes |N/A
 |005 |*.shp +
 *.shx +
-*.dbf |Polygon features |Polygon, PolygonZ, PolygonM, Multipatch
+*.dbf |Polygon features |Polygon, PolygonZ, PolygonM, `MultiPatch`
 |006 |*.dbf |Polygon feature class-level attributes |N/A
 |007 |*.shp +
 *.shx +
@@ -74,6 +74,8 @@ The Vector dataset concept and the feature code concepts overlap somewhat; some 
 |019 |*.dbf |Lineal Figure Point extended-level attributes |N/A
 |020 |*.dbf |Polygon Figure Point extended-level attributes |N/A
 |================================================================================================
+
+*Deprecation Note*: In CDB Version 1.2, the Shapefile _MultiPatch_ geometry type was deprecated. For backwards compatibility, this geometry type will remain in the CDB standard until such time as CDB Version 2.0 is approved as an OGC standard. AT that time, all MultiPatch references will be removed from all CDB volumes.
 
 *_Notes about Shapefile Polygon Shapes_*
 
