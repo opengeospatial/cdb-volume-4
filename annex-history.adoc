@@ -9,6 +9,6 @@
 |3/12/2016 |Draft |C Reed |Many |Add Shapefile normative text from core into this document and redo requirements and ATS
 |3/18/2015 |Draft |C Reed |Various |Remove RCS and put in separate volume.
 |11/15/16 |Final |C Reed |Various |Final edits for publication
-|12/28/17 |Draft |C. Reed |Various |Draft edits for version 1.1.
-|12/22/19/ 1.2| C Reed | Scope, Cover page |Minor updates for version 1.2
+|12/28/17 |Draft |C Reed |Various |Draft edits for version 1.1.
+|12/22/19 | 1.2| C Reed | Scope, Cover page |Minor updates for version 1.2
 |=======================================================================================================================
