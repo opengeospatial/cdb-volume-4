@@ -1,0 +1,12 @@
+{
+        "1": {
+                "OGC_doc_number": "16-070r4",
+                "urn":"http://www.opengis.net/doc/BP/shapefile-guidance/1.2",
+                "title":"Volume 4: OGC CDB Rules for Encoding CDB Vector Data using Shapefiles (Best Practice)",
+                "path":"standard_document.adoc",
+                "options": ["--trace"],
+                "a":[
+                        "data-uri"
+                ]
+        }
+}
