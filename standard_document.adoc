@@ -1,5 +1,5 @@
-:Title: Volume 4: OGC CDB Rules for Encoding CDB Vector Data using Shapefiles (Best Practice).
-:titletext: Volume 4: OGC CDB Rules for Encoding CDB Vector Data using Shapefiles (Best Practice).
+:Title: Volume 4: OGC CDB Rules for Encoding CDB Vector Data using Shapefiles (Best Practice)
+:titletext: Volume 4: OGC CDB Rules for Encoding CDB Vector Data using Shapefiles (Best Practice)
 :doctype: book
 :encoding: utf-8
 :lang: en
