@@ -12,8 +12,6 @@ As per Esri Shapefile Technical Description, the set of attributes of Vector fea
 
 include::requirements/requirements_class.adoc[]
 
-
-
 To completely represent the vector data and attributes in a given tile as a Shapefile, the CDB standard requires that a Vector dataset consists of some or all of the following files:
 
 * **.shp* – feature shape files that provides the geometric aspects of each instance of a vector feature (point, lineal, and polygon features).
