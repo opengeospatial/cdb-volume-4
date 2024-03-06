@@ -23,8 +23,12 @@ Organization name(s)
 
 * CAE Inc.
 * Carl Reed, OGC Individual Member
+* UK Met Office
+* Ecere Corporation
+* The Joint Staff
+* FSI International Visual Systems
+* SimBlocks LLC
 
-[red]#*_Placeholder# for the list of CDB SWG Voting Members who cast a ballot in the SWG eVote approving the draft document for submission to the OAB and request for public comment_*
 
 
 
