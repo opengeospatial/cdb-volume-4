@@ -6,18 +6,20 @@ This section provides details and examples for any conventions used in the docum
 
 The normative provisions in this standard are denoted by the URI namespace
 
-    http://www.opengis.net/spec/cdb/1.0/shapefile
+    http://www.opengis.net/spec/cdb/1.2/shapefile
 
 All requirements that appear in this document are denoted by partial URIs which are relative to the namespace shown above.
 
 For the sake of brevity, the use of “req” in a requirement URI denotes:
-      http://www.opengis.net/spec/cdb/1.0/shapefile/req
+      http://www.opengis.net/spec/cdb/1.2/shapefile/req
+
+All conformance tests that appear in this document are denoted by partial URIs which are relative to the namespace shown above.
+
+For the sake of brevity, the use of “conf” in a requirement URI denotes:
+        http://www.opengis.net/spec/cdb/1.2/shapefile/conf
+
 
 An example might be:
 
 req/shapefile/storage
 
-All conformance tests that appear in this document are denoted by partial URIs which are relative to the namespace shown above.
-
-For the sake of brevity, the use of “conf” in a requirement URI denotes:
-        http://www.opengis.net/spec/cdb/1.0/shapefile/conf

@@ -2,6 +2,7 @@
 
 This CDB Best Practice volume defines the requirements and provides guidance on how to use Esri ShapeFiles in a CDB data store.
 
+
 For ease of editing and review, the standard has been separated into 15 document Volumes and a schema repository.
 
 * Volume 0: OGC CDB Companion Primer for the CDB standard (Best Practice).
@@ -18,7 +19,7 @@ For ease of editing and review, the standard has been separated into 15 document
 * Volume 11: OGC CDB Core Standard Conceptual Model (Normative).
 * Volume 12: OGC CDB Navaids Attribution and Navaids Attribution Enumeration Values (Best Practice).
 * Volume 13: OGC CDB Rules for Encoding CDB Vector Data using GeoPackage (Normative, Optional Extension).
-* Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice). +
+* Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice).
 * OGC CDB Optional Multi-Spectral Imagery Extension (Normative).
 
 
