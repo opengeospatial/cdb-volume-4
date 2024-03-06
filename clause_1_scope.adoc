@@ -2,7 +2,8 @@
 
 This CDB Best Practice volume defines the requirements and provides guidance on how to use Esri ShapeFiles in a CDB data store.
 
-For ease of editing and review, the standard has been separated into 15 Volumes and a schema repository.
+
+For ease of editing and review, the standard has been separated into 15 document Volumes and a schema repository.
 
 * Volume 0: OGC CDB Companion Primer for the CDB standard (Best Practice).
 * Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure. The main body (core) of the CDB standard (Normative).
@@ -20,4 +21,5 @@ For ease of editing and review, the standard has been separated into 15 Volumes 
 * Volume 13: OGC CDB Rules for Encoding CDB Vector Data using GeoPackage (Normative, Optional Extension).
 * Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice).
 * OGC CDB Optional Multi-Spectral Imagery Extension (Normative).
+
 
